@@ -1,0 +1,250 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+/* Variables */
+
+/* Custom HTML */
+html { font-family: arial, verdana, sans-serif; height:100% }
+body { 
+    height:100%; 
+    width:100%; 
+
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #BDD9FC),
+        color-stop(1, #EAF3FC)
+    );
+    background-image: -o-linear-gradient(bottom, #BDD9FC 0%, #EAF3FC 100%);
+    background-image: -moz-linear-gradient(bottom, #BDD9FC 0%, #EAF3FC 100%);
+    background-image: -webkit-linear-gradient(bottom, #BDD9FC 0%, #EAF3FC 100%);
+    background-image: -ms-linear-gradient(bottom, #BDD9FC 0%, #EAF3FC 100%);
+    background-image: linear-gradient(to bottom, #BDD9FC 0%, #EAF3FC 100%);
+
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+li { padding-top:41px; padding-bottom:35px }
+a { font-size:16px }
+strong { font-weight:bold }
+
+/* CSS genérico */
+.alert-error { 
+    color: #B94A48; 
+    background-color: #f2dede; 
+    border-color: #eed3d7; 
+    margin-bottom:30px 
+}
+.alert-success { 
+    color: #468847; 
+    background-color: #dff0d8; 
+    border-color: #d6e9c6; 
+    margin-bottom:30px 
+}
+.margen-inf { 
+    margin-bottom:30px; 
+}
+
+/* Menú superior */
+.menu-top { height:123px; border:none }
+.logo { margin-left:50px }
+
+/* Cuerpo */
+.cuerpo { 
+    max-width:100%; 
+    height:auto; 
+    background:transparent;
+}
+.fondoweb { 
+    height:auto;
+    padding-top:30px
+}
+
+/* Contenedor de los elementos del cuerpo */
+.contenedor { 
+    background:transparent;
+    width:960px; 
+    min-height:30px;
+    padding-top:30px;
+    padding-bottom:30px;
+    overflow:hidden
+}
+
+/* Footer */
+.footer {
+    border-top:1px solid #333333;
+    margin-top:100px; 
+    width:65%; 
+    padding-top:20px; 
+    display:inline-block;
+
+    li { 
+        padding:0px; 
+        display:inline-block; 
+        margin-right:20px;
+        a { 
+            font-size:13px; 
+            color:#222222 
+        }
+        a:hover { 
+            text-decoration:underline 
+        }
+    }
+}
+
+/* Index */
+.logo-eslogan-tablet {
+
+    .logo-y-eslogan { 
+        display:inline-block; 
+        vertical-align:middle;
+        margin-bottom:30px;
+
+        .logo { 
+            margin:0px auto; 
+        }
+        .eslogan { 
+            margin-top:30px; 
+            margin-bottom:30px; 
+            width:300px; 
+            font-size:25px 
+        }
+        .boton { 
+            border:none;
+            background:#007AFC;
+            border-radius:5px;
+            padding-left:20px;
+            padding-right:20px;
+            padding-top:12px;
+            padding-bottom:12px;
+            font-size:16px;
+            color:#EEEEEE;
+        }
+    }
+
+    .tablet { 
+        display:inline-block;
+        vertical-align:middle 
+    }
+}
+
+/* Nosotros */
+.nosotros {
+    text-align:justify;
+    line-height:25px;
+    padding:25px;
+
+    .equipo {
+        text-align:center;
+
+        .integrante {
+            padding:20px;
+            background:#A5C1DC;
+            width:250px;
+            height:250px;
+            display:inline-block;
+            text-align:center;
+            border-radius:10px;
+            margin:0px auto;
+            margin-bottom:20px;
+
+            .foto {
+                width:140px;
+                height:140px;
+                border-radius:90px;
+            }
+            .nombre {
+                margin-top:9px;
+                font-size:20px;
+            }
+            .puesto {
+                font-size:14px;
+            }
+        }
+    }
+}
+
+/* Empleo */
+.empleo {
+    text-align:justify;
+    width:65%;
+    line-height:25px;
+
+    li {
+        padding-top:5px;
+        padding-bottom:5px;
+        list-style-type:circle;
+    }
+    p {
+        padding:30px
+    }
+
+    .elemento-form {
+        text-align:center;
+        margin-bottom:20px;
+        overflow:hidden;
+
+        .curriculo {
+            display: block !important;
+            margin:0px auto;
+        }
+
+        .textarea {
+            padding:10px;
+            width:50%;
+            height:150px;
+        }
+
+        .boton { 
+            border:none;
+            background:#007AFC;
+            border-radius:5px;
+            padding-left:20px;
+            padding-right:20px;
+            padding-top:8px;
+            padding-bottom:8px;
+            font-size:16px;
+            color:#EEEEEE;
+        }
+    }
+}
+
+/* Contacto */
+.contacto {
+    width:65%;
+
+    p {
+        padding:30px;
+        width:65%;
+    }
+
+    .boton {
+        border:none;
+        background:#007AFC;
+        border-radius:5px;
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:8px;
+        padding-bottom:8px;
+        font-size:16px;
+        color:#EEEEEE;
+    }
+}
+
+/* Aviso legal */
+.aviso-legal {
+    width:65%;
+    text-align:justify;
+    line-height:25px;
+
+    li {
+        padding-top:5px;
+        padding-bottom:5px;
+        list-style-type:circle;
+    }
+}

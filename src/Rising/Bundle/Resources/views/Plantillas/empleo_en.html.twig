@@ -1,0 +1,60 @@
+{% extends '::base-rising-en.html.twig' %}
+
+{% block body_content %}
+    <div class="img-responsive empleo">
+
+        <div class="alert-success">
+            {% if successes|length > 0 %}
+                {% for success in successes %}
+                    <p>{{ success }}</p>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="alert-error">
+            {% if errors|length > 0 %}
+                {% for error in errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        En estos momentos estamos buscando colaboradores para incorporar a nuestro equipo. Concretamente:<br><br><br>
+
+        <ul>
+            <li>Un programador experto en tratamiento de audio en Android</li>
+            <li>Un comercial experto en marketing y community management</li>
+        </ul><br><br>
+
+        Los colaboradores no serán remunerados inmediatamente, sino que recibirán un porcentaje de los beneficios generados por Scores.<br><br>
+
+        Si cumples el perfil de alguno de estos puestos y te interesa, usa el formulario que tienes a continuación para contactar con nosotros. Te responderemos a la mayor brevedad.<br><br>
+
+        {{ form_start(form) }}
+            <div class="alert-error">
+                {{ form_errors(form.curriculo) }}
+                {{ form_errors(form) }}
+            </div>
+
+            <div class="elemento-form">
+                {{ form_label(form.curriculo) }} 
+                <br>
+                {{ form_widget(form.curriculo, 
+                    {'attr': {'class':'curriculo'}}
+                ) }} 
+            </div>
+
+            <div class="elemento-form">
+                {{ form_label(form.mensaje) }} 
+                <br>
+                {{ form_widget(form.mensaje, 
+                    {'attr': {'class':'textarea'}}
+                ) }} 
+            </div>
+
+            <div class="elemento-form">
+                <input type="submit" class="boton" value="Enviar">
+            </div>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends '::base-rising.html.twig' %}
+
+{% block body_content %}
+
+    {% if error is defined %}
+        <div class="alert-error"><p>{{ error }}</p></div>
+    {% endif %}
+    {% if success is defined %}
+        <div class="alert-success"><p>{{ success }}</p></div>
+    {% endif %}
+
+    <div class="img-responsive contacto">
+        <form class="navbar-form" method="POST">
+            <input type="text" name="name" class="form-control margen-inf" placeholder="{% trans from "contact" %}Nombre {% endtrans %}" required>
+            <input type="email" name="email" class="form-control margen-inf" placeholder="{% trans from "contact" %}Correo electrónico {% endtrans %}" required>
+            <textarea class="form-control margen-inf" rows="3" name="message" required></textarea>
+            <button type="submit" class="btn boton">{% trans from "contact" %}Enviar mensaje{% endtrans %}</button>
+        </form>
+    </div>
+{% endblock %}

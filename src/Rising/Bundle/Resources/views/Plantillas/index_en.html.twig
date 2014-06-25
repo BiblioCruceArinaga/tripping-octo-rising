@@ -1,0 +1,26 @@
+{% extends '::base-rising-en.html.twig' %}
+
+{% block body_content %}
+    <div class="img-responsive logo-eslogan-tablet">
+        <div class="logo-y-eslogan">
+            <img src="{{ asset('/img/logo.png') }}" class="img-responsive logo" />
+            <p class="eslogan">{% trans from "index"%}Gestiona y usa tus partituras con esta aplicación para Android{% endtrans %}</p>
+            <input type="button" class="boton" value="{% trans from "index"%}Más información{% endtrans %}">
+        </div>
+        <div class="tablet">
+            <img src="{{ asset('/img/tablet.png') }}" class="img-responsive" />
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+
+    {{ parent() }}
+
+    <script type="text/javascript">
+        $(".boton").click(function() {
+            window.open("http://scores.rising.es/en/");
+        });
+    </script>
+
+{% endblock %}

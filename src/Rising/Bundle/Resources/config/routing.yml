@@ -1,0 +1,51 @@
+rising_homepage:
+    pattern:  /
+    defaults: { _controller: RisingBundle:Default:index }
+rising_homepage_en:
+    pattern: /en/
+    defaults: { _controller: RisingBundle:Default:index_en, _locale: en }
+    requirements:
+        _locale: en
+rising_aviso_legal:
+    pattern:  /aviso-legal
+    defaults: { _controller: RisingBundle:Default:avisolegal}
+rising_aviso_legal_en:
+    pattern:  /en/aviso-legal
+    defaults: { _controller: RisingBundle:Default:avisolegal_en, _locale: en }
+    requirements:
+        _locale: en
+rising_politica_privacidad:
+    pattern:  /politica-privacidad
+    defaults: { _controller: RisingBundle:Default:politicaprivacidad }
+rising_politica_privacidad_en:
+    pattern:  /en/politica-privacidad
+    defaults: { _controller: RisingBundle:Default:politicaprivacidad_en, _locale: en }
+    requirements:
+        _locale: en
+rising_blog:
+    pattern:  /blog
+    defaults: { _controller: RisingBundle:Default:blog }
+rising_nosotros:
+    pattern:  /nosotros
+    defaults: { _controller: RisingBundle:Default:nosotros }
+rising_nosotros_en:
+    pattern:  /en/nosotros
+    defaults: { _controller: RisingBundle:Default:nosotros_en, _locale: en }
+    requirements:
+        _locale: en
+#rising_empleo:
+#    pattern:  /empleo
+#    defaults: { _controller: RisingBundle:Default:empleo }
+#rising_empleo_en:
+#    pattern:  /en/empleo
+#    defaults: { _controller: RisingBundle:Default:empleo_en, _locale: en }
+#     requirements:
+#         _locale: en
+rising_contacto:
+    pattern:  /contacto
+    defaults: { _controller: RisingBundle:Default:contacto }
+rising_contacto_en:
+    pattern:  /en/contacto
+    defaults: { _controller: RisingBundle:Default:contacto_en, _locale: en }
+    requirements: 
+        _locale: en

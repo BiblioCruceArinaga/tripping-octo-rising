@@ -1,0 +1,105 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}
+
+html{line-height:1}
+
+ol,ul{list-style:none}
+
+table{border-collapse:collapse;border-spacing:0}
+
+caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}
+
+q,blockquote{quotes:none}
+
+q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}
+
+a img{border:none}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}
+
+html{font-family:arial, verdana, sans-serif;height:100%}
+
+body{	height:100%;
+	width:100%;
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #bdd9fc), color-stop(1, #eaf3fc));
+	background-image:-o-linear-gradient(bottom, #bdd9fc 0%, #eaf3fc 100%);
+	background-image:-moz-linear-gradient(bottom, #bdd9fc 0%, #eaf3fc 100%);
+	background-image:-webkit-linear-gradient(bottom, #bdd9fc 0%, #eaf3fc 100%);
+	background-image:-ms-linear-gradient(bottom, #bdd9fc 0%, #eaf3fc 100%);
+	background-image:linear-gradient(to bottom, #bdd9fc 0%,#eaf3fc 100%);
+	background-repeat:no-repeat;background-attachment:fixed}
+
+li{padding-top:41px;padding-bottom:35px}
+
+a{font-size:16px}
+
+strong{font-weight:bold}
+
+.alert-error{color:#B94A48;background-color:#f2dede;border-color:#eed3d7;margin-bottom:30px}
+
+.alert-success{color:#468847;background-color:#dff0d8;border-color:#d6e9c6;margin-bottom:30px}
+
+.margen-inf{margin-bottom:30px}
+
+.menu-top{height:123px;border:none}
+
+.logo{margin-left:50px}
+
+.cuerpo{max-width:100%;height:auto;background:transparent}
+
+.fondoweb{height:auto;padding-top:30px}
+
+.contenedor{background:transparent;width:960px;min-height:30px;padding-top:30px;padding-bottom:30px;overflow:hidden}
+
+.footer{border-top:1px solid #333333;margin-top:100px;width:65%;padding-top:20px;display:inline-block}
+
+.footer li{padding:0px;display:inline-block;margin-right:20px}
+
+.footer li a{font-size:13px;color:#222}
+
+.footer li a:hover{text-decoration:underline}
+
+.logo-eslogan-tablet .logo-y-eslogan{display:inline-block;vertical-align:middle;margin-bottom:30px}
+
+.logo-eslogan-tablet .logo-y-eslogan .logo{margin:0px auto}
+
+.logo-eslogan-tablet .logo-y-eslogan .eslogan{margin-top:30px;margin-bottom:30px;width:300px;font-size:25px}
+
+.logo-eslogan-tablet .logo-y-eslogan .boton{border:none;background:#007AFC;border-radius:5px;padding-left:20px;padding-right:20px;padding-top:12px;padding-bottom:12px;font-size:16px;color:#EEEEEE}
+
+.logo-eslogan-tablet .tablet{display:inline-block;vertical-align:middle}
+
+.nosotros{text-align:justify;line-height:25px;padding:25px}
+
+.nosotros .equipo{text-align:center}
+
+.nosotros .equipo .integrante{padding:20px;background:#A5C1DC;width:250px;height:250px;display:inline-block;text-align:center;border-radius:10px;margin:0px auto;margin-bottom:20px}
+
+.nosotros .equipo .integrante .foto{width:140px;height:140px;border-radius:90px}
+
+.nosotros .equipo .integrante .nombre{margin-top:9px;font-size:20px}
+
+.nosotros .equipo .integrante .puesto{font-size:14px}
+
+.empleo{text-align:justify;width:65%;line-height:25px}
+
+.empleo li{padding-top:5px;padding-bottom:5px;list-style-type:circle}
+
+.empleo p{padding:30px}
+
+.empleo .elemento-form{text-align:center;margin-bottom:20px;overflow:hidden}
+
+.empleo .elemento-form .curriculo{display:block !important;margin:0px auto}
+
+.empleo .elemento-form .textarea{padding:10px;width:50%;height:150px}
+
+.empleo .elemento-form .boton{border:none;background:#007AFC;border-radius:5px;padding-left:20px;padding-right:20px;padding-top:8px;padding-bottom:8px;font-size:16px;color:#EEEEEE}
+
+.contacto{width:65%}
+
+.contacto p{padding:30px;width:65%}
+
+.contacto .boton{border:none;background:#007AFC;border-radius:5px;padding-left:20px;padding-right:20px;padding-top:8px;padding-bottom:8px;font-size:16px;color:#EEEEEE}
+
+.aviso-legal{width:65%;text-align:justify;line-height:25px}
+
+.aviso-legal li{padding-top:5px;padding-bottom:5px;list-style-type:circle}

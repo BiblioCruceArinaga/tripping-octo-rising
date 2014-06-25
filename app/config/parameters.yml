@@ -1,0 +1,15 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: smartscores
+    database_user: root
+    database_password: 123456789
+    mailer_transport: mail
+    mailer_encryption: tls
+    mailer_host: smtp.1and1.es
+    mailer_user: info@rising.es
+    mailer_password: Rising_2014
+    locale: es
+    secret: mypersonaltoken

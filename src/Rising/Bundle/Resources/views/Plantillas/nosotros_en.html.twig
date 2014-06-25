@@ -1,0 +1,22 @@
+{% extends '::base-rising-en.html.twig' %}
+
+{% block body_content %}
+    <div class="img-responsive nosotros">
+        {% trans from "about" %}Rising es una joven startup afincada en Gran Canaria y dedicada al desarrollo de aplicaciones web y móviles. Comenzó su andadura en julio de 2013 cuando Joel y Ayoze, dos entusiastas de la informática y la tecnología, decidieron unir fuerzas. Con mucha ilusión y talento, gestaron la creación de Scores, una aplicación de manejo de partituras en formato digital para Android.{% endtrans %}<br><br>
+
+        <div class="equipo">
+            <div class="integrante">
+                <img src="{{ asset('/img/joel.jpg') }}" class="foto" /><br>
+                <label class="nombre">Joel Rodríguez</label><br>
+                <label class="puesto">{% trans from "about" %}CEO y cofundador{% endtrans %}</label><br>
+            </div>
+            <div class="integrante">
+                <img src="{{ asset('/img/ayoze.jpg') }}" class="foto" /><br>
+                <label class="nombre">Ayoze Pérez</label><br>
+                <label class="puesto">{% trans from "about" %}CTO y cofundador{% endtrans %}</label><br>
+            </div>
+        </div><br>
+
+        {% trans from "about" %}En Rising pensamos que hay que hacer las cosas de forma diferente al resto. Creemos que las empresas que piensan así son las que mejores productos y servicios ofrecen a sus usuarios. Por ello, esta idea es la base que guía nuestras decisiones, y es también nuestra mayor motivación. Al fin y al cabo, queremos ofrecerte experiencias que sólo nosotros podamos ofrecerte.{% endtrans %}
+    </div>
+{% endblock %}

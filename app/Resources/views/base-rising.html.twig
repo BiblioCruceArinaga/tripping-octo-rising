@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Rising{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+        
+        {% block stylesheets %}
+            <link href="{{ asset('/css/bootstrap.min.css') }}" type="text/css" rel="stylesheet">
+            <link href="{{ asset('/css/styles-rising.css') }}" type="text/css" rel="stylesheet">
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('/img/favicon.ico') }}" />
+    </head>
+    <body>
+        {% block menu %}
+        <div class="menu-top">
+            <nav class="navbar navbar-default" role="navigation">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ path('rising_homepage') }}">
+                    <img src="{{ asset('/img/logo-rising.png') }}" class="img-responsive logo" />
+                </a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <!--<li><a target="_blank" href="">Facebook</a></li>-->
+                  <li><a target="_blank" href="https://twitter.com/rising_info"><img src="{{ asset('/img/twt-logo.png') }}"/></a></li>
+                  <li><a target="_blank" href="{{ path('rising_blog') }}">Blog</a></li>
+                  <li><a href="{{ path('rising_nosotros') }}">{% trans from "index"%}Nosotros{% endtrans %}</a></li>
+                  <li><a href="{{ path('rising_contacto') }}">{% trans from "index"%}Contacto{% endtrans %}</a></li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+        {% endblock %}
+
+        {% block body %}
+            <div class="cuerpo" align="center">
+                <div class="fondoweb">
+                    <div class="img-responsive contenedor">
+                        {% block body_content %}{% endblock %}
+                        
+                        <footer class="img-responsive footer">
+                            <ul>
+                                <li><a href="{{ path('rising_aviso_legal') }}">{% trans from "index"%}Aviso legal{% endtrans %}</a></li>
+                                <li><a href="{{ path('rising_politica_privacidad') }}">{% trans from "index"%}Política de privacidad{% endtrans %}</a></li>
+                                <li><a target="_blank" href="http://scores.rising.es/">Scores</a></li>
+                                <li><a href="{{ path('rising_homepage_en') }}">English</a></li>
+                            </ul>
+                        </footer>
+                    </div>
+                </div>
+            </div>                
+        {% endblock %}        
+        
+        {% block javascripts %}
+            <script src="{{ asset('/js/jquery-2.1.0.min.js') }}"></script>
+            <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+
+            <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+              ga('create', 'UA-49215510-1', 'rising.es');
+              ga('send', 'pageview');
+            </script>
+        {% endblock %}
+    </body>
+</html>
+

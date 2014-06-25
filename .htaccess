@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Importantísimo: esta condición establece que no se reescriban las
+    # rutas de fichero CSS, JS, GIF, JPG, etc.
+    RewriteCond %{REQUEST_URI} !\.(css|gif|ico|jpg|js|png|swf|txt)$
+
+    # Esta condición excluye la ruta del blog
+    RewriteCond %{REQUEST_URI} !blog/ 
+    
+    # Se elimina la sección web/* de la URL
+    RewriteRule ^(.*)$ /web/app.php [NC]
+</IfModule>

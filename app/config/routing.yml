@@ -1,0 +1,3 @@
+rising:
+    resource: "@RisingBundle/Resources/config/routing.yml"
+    prefix:   /
